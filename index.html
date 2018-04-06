@@ -1,47 +1,116 @@
 ---
 layout: default
-title: Resume
+title: Joe Matthews
+subtitle: Web Developer
+phone: 1-405-274-5060
+email: joe@techwonderful.com
 ---
 <div class="container">
-  <br/>
-
-  <div class="row">
-
-    <!-- Work History -->
+  <!-- Header -->
+  <div class="row align-items-center">
     <div class="col">
-      <!-- Companies -->
-      {% for company in site.data.companies %}
-      <div class="row">
-        <div class="col">
-          <h3 class="text-nowrap"><strong>{{ company.name }}</strong></h3>
-        </div>
-        <div class="col">
-          <p class="text-muted text-right text-nowrap">{{company.location}}</p>
-        </div>
-      </div>
-      <div class="row"><div class="col"><hr/></div></div> <!-- horizontal line -->
-      <!-- Positions -->
-      {% for position in company.positions %}
-      <div class="row align-items-center">
-        <div class="col-5">
-          <p class="text-muted">{{ position.dates }}</p>
-        </div>
-        <div class="col">
-          <h4>{{ position.name }}</h4>
-          <!-- Points -->
-          <ul>
-            {% for point in position.points %}
-            <li>{{ point }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-        <div class="col-3">
-        </div>
-      </div>
-      {% endfor %}
-      {% endfor %}
+      <p class="text-center"><a href="tel:{{ page.phone }}">{{ page.phone }}</a></p>
     </div>
-
+    <div class="col">
+      <h1 class="oswald display-1 text-center text-nowrap">{{ page.title` }}</h1>
+      <h2 class="oswald text-center text-muted" style="margin-top: -0.7em">{{ page.subtitle }}</h2>
+      <hr/>
+    </div>
+    <div class="col">
+      <p class="text-center"><a href="{{ page.email }}">{{ page.email }}</a></p>
+    </div>
   </div>
-
+  <div class="row">
+    <div class="col-4">
+      <!-- Skills -->
+      <div class="card">
+        <div class="card-header text-center">
+          <h2 class="oswald">Skills</h2>
+        </div>
+        <ul class="list-group list-group-flush">
+          {% for skill in site.data.skills %}
+            <li class="list-group-item text-center">
+              <img class="img-fluid rounded" src="{{ skill.image | relative_url }}">
+              <br/>
+              {{skill.name}}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="col">
+      <!-- Work History -->
+      <div class="card">
+        <div class="card-header text-center">
+          <h2 class="oswald">Work History</h2>
+        </div>
+        <div class="card-body">
+          <!-- Companies -->
+          {% for company in site.data.companies %}
+          <div class="row align-items-center">
+            <div class="col">
+              <h3 class="text-nowrap">{{ company.name }}&nbsp;&nbsp;<small class="text-muted">{{ company.location }}</small></h3>
+            </div>
+            <div class="col-4">
+              <img class="img-fluid rounded" src="{{ company.image | relative_url }}">
+            </div>
+          </div>
+          <!-- Positions -->
+          {% for position in company.positions %}
+          <div class="row align-items-center">
+            <div class="col-5">
+              <p class="text-muted text-center">{{ position.dates }}</p>
+            </div>
+            <div class="col">
+              <h4>{{ position.name }}</h4>
+              <!-- Points -->
+              <ul>
+                {% for point in position.points %}
+                <li class="text-muted">{{ point }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+            <div class="col-3">
+            </div>
+          </div>
+          {% endfor %}
+          {% if company != site.data.companies.last %}
+            <hr/>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+      <br/>
+      <div class="card">
+        <!-- Education -->
+        <div class="card-header text-center">
+          <h2 class="oswald">Education</h2>
+        </div>
+        <div class="card-body">
+          <!-- Schools -->
+          {% for school in site.data.schools %}
+          <div class="row align-items-center">
+            <div class="col-4">
+              <img class="img-fluid rounded" src="{{ school.image | relative_url }}">
+            </div>
+            <div class="col">
+              <h3 class="text-nowrap">{{ school.name }}&nbsp;&nbsp;<small class="text-muted">{{ school.location }}</small></h3>
+              <!-- Points -->
+              <ul>
+                {% for point in school.points %}
+                <li>{{ point }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+            <div class="col-5">
+              <p class="text-muted text-center">{{ school.dates }}</p>
+            </div>
+          </div>
+          {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br/>
 </div><!-- container -->

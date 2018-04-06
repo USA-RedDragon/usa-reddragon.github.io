@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Ruby",
+    "image": "/assets/images/skills/ruby.png"
+  },
+  {
+    "name": "Ruby on Rails",
+    "image": "/assets/images/skills/rails.png"
+  },
+  {
+    "name": "PostgreSQL",
+    "image": "/assets/images/skills/postgres.png"
+  },
+  {
+    "name": "Bootstrap",
+    "image": "/assets/images/skills/bootstrap.png"
+  },
+  {
+    "name": "HTML5",
+    "image": "/assets/images/skills/html5.png"
+  },
+  {
+    "name": "CSS3",
+    "image": "/assets/images/skills/css3.png"
+  },
+  {
+    "name": "JavaScript",
+    "image": "/assets/images/skills/js.jpg"
+  },
+  {
+    "name": "Highcharts JS",
+    "image": "/assets/images/skills/chart.png"
+  },
+  {
+    "name": "Git",
+    "image": "/assets/images/skills/git.png"
+  },
+  {
+    "name": "Bash",
+    "image": "/assets/images/skills/bash.png"
+  },
+  {
+    "name": "Linux Admin",
+    "image": "/assets/images/skills/gnulinux.png"
+  }
+]

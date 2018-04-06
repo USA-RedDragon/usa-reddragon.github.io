@@ -1,5 +1,12 @@
 ---
 ---
+// Fonts
+.oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
+// Import Lobster Font from Google
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 // Import custom bootstrap settings and bootstrap itself
 @import "custom-bootstrap"

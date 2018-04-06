@@ -1,0 +1,19 @@
+[
+  {
+    "name": "University of Oklahoma",
+    "location": "Norman, OK",
+    "dates": "Aug 2003 - Feb 2006",
+    "image": "/assets/images/schools/ou.jpg",
+    "points": [
+      "Completed 6 semesters"
+    ]
+  },{
+    "name": "Talihina High School",
+    "location": "Talihina, OK",
+    "dates": "May 2003",
+    "image": "/assets/images/schools/talihina.png",
+    "points": [
+      "Graduated with honors"
+    ]
+  }
+]
