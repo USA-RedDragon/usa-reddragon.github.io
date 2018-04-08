@@ -1,46 +1,57 @@
 [
   {
     "name": "Ruby",
-    "image": "/assets/images/skills/ruby.png"
+    "image": "/assets/images/skills/ruby.png",
+    "url": "https://www.ruby-lang.org/en/about/"
   },
   {
     "name": "Ruby on Rails",
-    "image": "/assets/images/skills/rails.png"
+    "image": "/assets/images/skills/rails.png",
+    "url": "http://rubyonrails.org/"
   },
   {
     "name": "PostgreSQL",
-    "image": "/assets/images/skills/postgres.png"
+    "image": "/assets/images/skills/postgres.png",
+    "url": "https://www.postgresql.org/about/"
   },
   {
     "name": "Bootstrap",
-    "image": "/assets/images/skills/bootstrap.png"
+    "image": "/assets/images/skills/bootstrap.png",
+    "url": "https://getbootstrap.com/docs/4.0/about/overview/"
   },
   {
     "name": "HTML5",
-    "image": "/assets/images/skills/html5.png"
+    "image": "/assets/images/skills/html5.png",
+    "url": "https://en.wikipedia.org/wiki/HTML5"
   },
   {
     "name": "CSS3",
-    "image": "/assets/images/skills/css3.png"
+    "image": "/assets/images/skills/css3.png",
+    "url": "https://en.wikipedia.org/wiki/Cascading_Style_Sheets"
   },
   {
     "name": "JavaScript",
-    "image": "/assets/images/skills/js.jpg"
+    "image": "/assets/images/skills/js.jpg",
+    "url": "https://en.wikipedia.org/wiki/JavaScript"
   },
   {
     "name": "Highcharts JS",
-    "image": "/assets/images/skills/chart.png"
+    "image": "/assets/images/skills/chart.png",
+    "url": "https://www.highcharts.com/products/highcharts/"
   },
   {
     "name": "Git",
-    "image": "/assets/images/skills/git.png"
+    "image": "/assets/images/skills/git.png",
+    "url": "https://git-scm.com/"
   },
   {
     "name": "Bash",
-    "image": "/assets/images/skills/bash.png"
+    "image": "/assets/images/skills/bash.png",
+    "url": "https://www.gnu.org/software/bash/"
   },
   {
     "name": "Linux Admin",
-    "image": "/assets/images/skills/gnulinux.png"
+    "image": "/assets/images/skills/gnulinux.png",
+    "url": "https://en.wikipedia.org/wiki/Linux"
   }
 ]

@@ -3,10 +3,11 @@
     "name": "Hitachi Computer Products America, Inc",
     "location": "Norman, OK",
     "image": "/assets/images/companies/hitachi.jpg",
+    "url": "http://www.hitachiomd.com/",
     "positions": [
       {
         "name": "Logistics Web Application Developer",
-        "dates": "Jan 2013 - Present",
+        "dates": "Jan 2014 - Present",
         "points": [
           "International development team",
           "Develop internal logistics tools for thousands of employees worldwide",
@@ -19,7 +20,7 @@
       },
       {
         "name": "Order Management Specialist",
-        "dates": "Dec 2012 - Jan 2013",
+        "dates": "Dec 2013 - Jan 2014",
         "points": [
           "Gather, review, and organize documents for new orders",
           "Collaborate with supply chain and on-site teams to resolve order issues"
@@ -27,7 +28,7 @@
       },
       {
         "name": "Server & Solutions Technician",
-        "dates": "Jan 2011 - Dec 2012",
+        "dates": "Jan 2012 - Dec 2013",
         "points": [
           "Assemble, configure and ship enterprise servers and solutions",
           "Provide technical documentation"
@@ -35,7 +36,7 @@
       },
       {
         "name": "Media Replication Specialist",
-        "dates": "Dec 2010 - Jan 2011",
+        "dates": "Dec 2010 - Jan 2012",
         "points": [
           "Manage replication and shipment of software",
           "Provide troubleshooting for Rimage media replicators",
@@ -48,6 +49,7 @@
     "name": "DirecTV/WildBlue (Convergys)",
     "location": "Moore, OK",
     "image": "/assets/images/companies/directv.png",
+    "url": "https://www.convergys.com/",
     "positions": [
       {
         "name": "Tier 2 Technical Support",
@@ -63,6 +65,7 @@
     "name": "Verizon Business DSL (PRC)",
     "location": "Durant, OK",
     "image": "/assets/images/companies/verizon.jpg",
+    "url": "https://en.wikipedia.org/wiki/Precision_Response_Corporation",
     "positions": [
       {
         "name": "Tier 2 Escalation Specialist",
@@ -86,6 +89,7 @@
     "name": "Wal-Mart",
     "location": "Durant, OK",
     "image": "/assets/images/companies/walmart.jpg",
+    "url": "https://www.walmartmuseum.com/",
     "positions": [
       {
         "name": "Customer Service Manager",

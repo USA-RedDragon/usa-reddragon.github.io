@@ -12,7 +12,7 @@ email: joe@techwonderful.com
       <p class="text-center"><a href="tel:{{ page.phone }}">{{ page.phone }}</a></p>
     </div>
     <div class="col">
-      <h1 class="oswald display-1 text-center text-nowrap">{{ page.title` }}</h1>
+      <h1 class="oswald display-1 text-center text-nowrap">{{ page.title }}</h1>
       <h2 class="oswald text-center text-muted" style="margin-top: -0.7em">{{ page.subtitle }}</h2>
       <hr/>
     </div>
@@ -30,7 +30,9 @@ email: joe@techwonderful.com
         <ul class="list-group list-group-flush">
           {% for skill in site.data.skills %}
             <li class="list-group-item text-center">
-              <img class="img-fluid rounded" src="{{ skill.image | relative_url }}">
+              <a href="{{ skill.url }}" target="_blank">
+                <img class="img-fluid rounded" src="{{ skill.image | relative_url }}">
+              </a>
               <br/>
               {{skill.name}}
             </li>
@@ -52,7 +54,9 @@ email: joe@techwonderful.com
               <h3 class="text-nowrap">{{ company.name }}&nbsp;&nbsp;<small class="text-muted">{{ company.location }}</small></h3>
             </div>
             <div class="col-4">
-              <img class="img-fluid rounded" src="{{ company.image | relative_url }}">
+              <a href="{{ company.url }}" target="_blank">
+                <img class="img-fluid rounded" src="{{ company.image | relative_url }}">
+              </a>
             </div>
           </div>
           <!-- Positions -->
@@ -91,7 +95,9 @@ email: joe@techwonderful.com
           {% for school in site.data.schools %}
           <div class="row align-items-center">
             <div class="col-4">
-              <img class="img-fluid rounded" src="{{ school.image | relative_url }}">
+              <a href="{{ school.url }}" target="_blank">
+                <img class="img-fluid rounded" src="{{ school.image | relative_url }}">
+              </a>
             </div>
             <div class="col">
               <h3 class="text-nowrap">{{ school.name }}&nbsp;&nbsp;<small class="text-muted">{{ school.location }}</small></h3>

@@ -1,9 +1,16 @@
 [
   {
+    "name": "A+ Certification",
+    "location": "Norman, OK",
+    "dates": "May 2013",
+    "image": "/assets/images/schools/aplus.jpg",
+    "url": "https://certification.comptia.org/certifications/a"
+  },{
     "name": "University of Oklahoma",
     "location": "Norman, OK",
     "dates": "Aug 2003 - Feb 2006",
     "image": "/assets/images/schools/ou.jpg",
+    "url": "http://www.ou.edu/web/about_ou.html",
     "points": [
       "Completed 6 semesters"
     ]
@@ -12,6 +19,7 @@
     "location": "Talihina, OK",
     "dates": "May 2003",
     "image": "/assets/images/schools/talihina.png",
+    "url": "http://www.talihina.k12.ok.us/",
     "points": [
       "Graduated with honors"
     ]
