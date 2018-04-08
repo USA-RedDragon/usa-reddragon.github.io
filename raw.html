@@ -1,0 +1,62 @@
+---
+layout: default
+title: Resume
+author: Joe Matthews
+subtitle: Father, Friend & Programmer.
+phone: 1-405-274-5060
+email: joe@techwonderful.com
+link: https://joematthews.github.io/resume
+source: https://github.com/joematthews/resume
+---
+<div>
+  <h1>{{ page.author }}</h1>
+  <h5>{{ page.subtitle }}</h5>
+  <p>
+    <a href="tel:{{ page.phone }}" style="text-decoration: underline;">{{ page.phone }}</a>&nbsp;
+    <a href="mailto:{{ page.email }}" target="_top" style="text-decoration: underline;">{{ page.email }}</a>
+  </p>
+  <p><strong>
+    For full version of resume, please visit:<br/>
+    >>>>>&nbsp;<a href="https://joematthews.github.io/resume" style="text-decoration: underline;">
+      https://joematthews.github.io/resume
+    </a>
+  </strong></p>
+  <br/>
+  <h3>Skills</h3>
+  <p>
+  {% for skill in site.data.skills %}
+    <span class="text-nowrap">{{ skill.name }}</span>
+    {% if skill != site.data.skills.last %}
+      ,
+    {% endif %}
+  {% endfor %}
+  </p>
+  <br/>
+  <h3>Work History</h3>
+  {% for company in site.data.companies %}
+  <h4><strong>{{ company.name }} - {{ company.location }}</strong></h4>
+    {% for position in company.positions %}
+    <h5>{{ position.dates }} - {{ position.name }}</h5>
+      <ul>
+      {% for point in position.points %}
+        <li>{{ point }}</li>
+      {% endfor %}
+      </ul>
+      <br/>
+    {% endfor %}
+  {% endfor %}
+  <br/>
+  <h3>Education</h3>
+  {% for school in site.data.schools %}
+  <h4><strong>{{ school.name }} - {{ school.location }}&nbsp;{{ schoo.dates }}</strong></h4>
+    {% if school.points.size != 0 %}
+    <ul>
+    {% endif %}
+    {% for point in school.points %}
+    <li>{{ point }}</li>
+    {% endfor %}
+    {% if school.points.size != 0 %}
+    </ul>
+    {% endif %}
+  {% endfor %}
+</div>
