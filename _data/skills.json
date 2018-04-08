@@ -53,5 +53,9 @@
     "name": "Linux Admin",
     "image": "/assets/images/skills/gnulinux.png",
     "url": "https://en.wikipedia.org/wiki/Linux"
+  },{
+    "name": "Data Integration",
+    "image": "/assets/images/skills/pdi.png",
+    "url": "http://www.pentaho.com/product/data-integration"
   }
 ]
