@@ -1,0 +1,18 @@
+[
+  {
+    "icon": "fab fa-github",
+    "url": "https://github.com/joematthews"
+  },{
+    "icon": "fab fa-facebook",
+    "url": "https://www.facebook.com/joematthewstech"
+  },{
+    "icon": "fab fa-twitter",
+    "url": "https://twitter.com/joematthewstech"
+  },{
+    "icon": "fab fa-instagram",
+    "url": "https://www.instagram.com/joematthewstech/"
+  },{
+    "icon": "fab fa-linkedin",
+    "url": "https://www.linkedin.com/in/joematthewstech/"
+  }
+]

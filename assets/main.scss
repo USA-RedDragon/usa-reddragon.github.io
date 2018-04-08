@@ -1,12 +1,16 @@
 ---
 ---
-// Fonts
-.oswald {
+
+// Accent Font Class
+.my-accent-font {
   font-family: 'Oswald', sans-serif;
 }
 
-// Import Lobster Font from Google
+// Import Accent Font from Google
 @import url('https://fonts.googleapis.com/css?family=Oswald');
+
+// Import Font Awesome Icons
+@import url('https://use.fontawesome.com/releases/v5.0.9/css/all.css');
 
 // Import custom bootstrap settings and bootstrap itself
 @import "custom-bootstrap"
