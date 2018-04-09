@@ -2,7 +2,7 @@
 # Simple, mobile-friendly, resume project for Jekyll
 
 ## Goal
-I created this project to provide an easy way for keeping my resume up to date.  
+I created this project to provide an easy way for keeping my resume up to date. You can see my current resume [here](https://joematthews.github.io/resume).
 
 The magic lies in the data files in the _data folder.  I use json to store all of my skills, work history and education including references to links and images.  Then I use the Liquid templating language of Jekyll to enumerate over the json objects to generate the view.
 
@@ -25,7 +25,7 @@ For all other methods for installing Ruby, including Windows, check out [this pa
 
 ### Install Jekyll & the resume project
 Installing Jekyll is quite simple once Ruby is up and running.  Jekyll's official [documentation](https://jekyllrb.com/docs/home/) is excellent, but running these commands will get you going:
-```bash
+```sh
 git clone https://github.com/joematthews/resume.git
 cd resume
 gem install jekyll bundler
