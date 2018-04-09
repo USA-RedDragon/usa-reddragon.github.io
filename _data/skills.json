@@ -17,7 +17,7 @@
   {
     "name": "Bootstrap",
     "image": "/assets/images/skills/bootstrap.png",
-    "url": "https://getbootstrap.com/docs/4.0/about/overview/"
+    "url": "https://getbootstrap.com/"
   },
   {
     "name": "HTML5",
@@ -47,7 +47,7 @@
   {
     "name": "Bash",
     "image": "/assets/images/skills/bash.png",
-    "url": "https://www.gnu.org/software/bash/"
+    "url": "https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29"
   },
   {
     "name": "Linux Admin",
