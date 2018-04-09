@@ -4,7 +4,7 @@
 ## Goal
 I created this project to provide an easy way for keeping my resume up to date. You can see my current resume [here](https://joematthews.github.io/resume).
 
-The magic lies in the data files in the _data folder.  I use json to store all of my skills, work history and education including references to links and images.  Then I use the Liquid templating language of Jekyll to enumerate over the json objects to generate the view.
+The magic lies in the data files in the [_data](https://github.com/joematthews/resume/tree/master/_data) folder.  I use json to store all of my skills, work history and education including references to links and images.  Then I use the Liquid templating language of Jekyll to enumerate over the json objects to generate the view.
 
 Bootstrap takes care of the visuals.  For my template I use a 24 column grid -- I find that the more columns the better for detailed work.
 
