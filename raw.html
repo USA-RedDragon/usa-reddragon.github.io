@@ -8,6 +8,7 @@ email: joe@techwonderful.com
 link: https://joematthews.github.io/resume
 source: https://github.com/joematthews/resume
 ---
+<!-- Raw format of resume for easier printing -->
 <div>
   <h1>{{ page.author }}</h1>
   <h5>{{ page.subtitle }}</h5>
@@ -48,15 +49,13 @@ source: https://github.com/joematthews/resume
   <br/>
   <h3>Education</h3>
   {% for school in site.data.schools %}
-  <h4><strong>{{ school.name }} - {{ school.location }}&nbsp;{{ schoo.dates }}</strong></h4>
-    {% if school.points.size != 0 %}
+  <h4><strong>{{ school.name }} - {{ school.location }}</h4>
+    <p>{{ school.dates }}</p>
     <ul>
-    {% endif %}
     {% for point in school.points %}
     <li>{{ point }}</li>
     {% endfor %}
-    {% if school.points.size != 0 %}
     </ul>
-    {% endif %}
+    <br/>
   {% endfor %}
 </div>
