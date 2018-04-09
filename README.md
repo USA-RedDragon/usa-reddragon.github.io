@@ -1,10 +1,10 @@
 ![resume screenshot](https://raw.githubusercontent.com/joematthews/resume/master/assets/images/resume_screenshot.png)
-# Simple, mobile-friendly, resume project for Jekyll
+# Simple, mobile-friendly, Jekyll-based resume
 
 ## Goal
-I created this project to provide an easy way for keeping my resume up to date. You can see my current resume [here](https://joematthews.github.io/resume).
+I created this project as an easy way for keeping my resume up to date. You can see my current resume [here](https://joematthews.github.io/resume).
 
-The magic lies in the data files in the [_data](https://github.com/joematthews/resume/tree/master/_data) folder.  I use json to store all of my skills, work history and education including references to links and images.  Then I use the [Liquid](http://shopify.github.io/liquid/) templating language of Jekyll to enumerate over the json objects to generate the view.
+The magic lies in the data files in the [_data](https://github.com/joematthews/resume/tree/master/_data) directory.  I use json to store all of my skills, work history and education including references to links and images.  Then I use the [Liquid](http://shopify.github.io/liquid/) templating language of Jekyll to enumerate over the json objects to generate the view.
 
 [Bootstrap](http://getbootstrap.com/) takes care of the visuals.  For my template I use a 24 column grid -- I find that the more columns the better for detailed work.
 
@@ -34,6 +34,6 @@ bundle exec jekyll serve
 Then, you should be able to see the resume at http://127.0.0.1:4000/resume/.
 
 ### Customize these files to make the resume your own
-  * Data files located in the [_data](https://github.com/joematthews/resume/tree/master/_data) folder.
+  * Data files located in the [_data](https://github.com/joematthews/resume/tree/master/_data) directory.
   * The config file, [_config.yaml](https://github.com/joematthews/resume/blob/master/_config.yml)
   * The template, [index.html](https://github.com/joematthews/resume/blob/master/index.html)
