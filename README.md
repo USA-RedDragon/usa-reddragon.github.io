@@ -4,11 +4,11 @@
 ## Goal
 I created this project to provide an easy way for keeping my resume up to date. You can see my current resume [here](https://joematthews.github.io/resume).
 
-The magic lies in the data files in the [_data](https://github.com/joematthews/resume/tree/master/_data) folder.  I use json to store all of my skills, work history and education including references to links and images.  Then I use the Liquid templating language of Jekyll to enumerate over the json objects to generate the view.
+The magic lies in the data files in the [_data](https://github.com/joematthews/resume/tree/master/_data) folder.  I use json to store all of my skills, work history and education including references to links and images.  Then I use the [Liquid](http://shopify.github.io/liquid/) templating language of Jekyll to enumerate over the json objects to generate the view.
 
-Bootstrap takes care of the visuals.  For my template I use a 24 column grid -- I find that the more columns the better for detailed work.
+[Bootstrap](http://getbootstrap.com/) takes care of the visuals.  For my template I use a 24 column grid -- I find that the more columns the better for detailed work.
 
-All CSS is compiled into one file -- including the custom fonts and social media icons; checkout the [assets/main.scss](https://github.com/joematthews/resume/blob/master/assets/main.scss) & [_sass/custom-bootstrap.scss](https://github.com/joematthews/resume/blob/master/_sass/_custom-bootstrap.scss) files to see how it's all put together.
+All CSS is compiled into one file -- including bootstrap, custom fonts & social media icons. Checkout the [assets/main.scss](https://github.com/joematthews/resume/blob/master/assets/main.scss) & [_sass/custom-bootstrap.scss](https://github.com/joematthews/resume/blob/master/_sass/_custom-bootstrap.scss) files to see how it's all put together.
 
 I soon plan to turn this template/project into an offical Jekyll theme gem with blog support.  Look forward to that.  In the meantime please feel free to use this project as a starting point for your Jekyll-based resume.
 
