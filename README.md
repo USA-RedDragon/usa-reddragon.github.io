@@ -10,7 +10,7 @@ The magic lies in the data files in the [_data](https://github.com/joematthews/r
 
 All CSS is compiled into one file -- including bootstrap, custom fonts & social media icons. Checkout the [assets/main.scss](https://github.com/joematthews/resume/blob/master/assets/main.scss) & [_sass/custom-bootstrap.scss](https://github.com/joematthews/resume/blob/master/_sass/_custom-bootstrap.scss) files to see how it's all put together.
 
-I soon plan to turn this template/project into an offical Jekyll theme gem with blog support.  Look forward to that.  In the meantime please feel free to use this project as a starting point for your Jekyll-based resume.
+I plan to turn this template/project into an offical Jekyll theme gem with blog support.  Look forward to that.  In the meantime please feel free to use this project as a starting point for your Jekyll-based resume.
 
 ## Try it yourself
 To get this project working locally on you computer you can follow these basic steps.
