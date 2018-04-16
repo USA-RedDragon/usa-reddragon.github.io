@@ -1,5 +1,11 @@
 [
   {
+    "icon": "fas fa-phone",
+    "url": "tel:1-405-274-5060"
+  },{
+    "icon": "fas fa-envelope",
+    "url": "mailto:joe@techwonderful.com"
+  },{
     "icon": "fab fa-github",
     "url": "https://github.com/joematthews"
   },{

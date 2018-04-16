@@ -1,32 +1,40 @@
 ---
 layout: default
 title: Resume
+portrait: assets/images/joe.jpg
 author: Joe Matthews
 subtitle: Father, Friend & Programmer.
 phone: 1-405-274-5060
 email: joe@techwonderful.com
 source: https://github.com/joematthews/resume
+summary: >-
+  Hello, I'm a software engineer with a passion for developing applications and
+  tools that provide an amazing user experience and developer experience.
 ---
 <div class="container">
   <!-- Header -->
-  <div class="row align-items-center">
-    <div class="col-lg-12 col-md-24 order-lg-2">
+  <div class="row">
+    <div class="col">
       <h1 class="my-accent-font display-1 text-center text-nowrap d-none d-sm-none d-md-block d-lg-block d-xl-block">{{ page.author }}</h1>
       <h1 class="my-accent-font display-3 text-center text-nowrap d-none d-sm-block d-md-none d-lg-none d-xl-none">{{ page.author }}</h1>
       <h1 class="my-accent-font text-center text-nowrap d-block d-sm-none d-md-none d-lg-none d-xl-none" style="font-size: 3.4em;">{{ page.author }}</h1>
       <h4 class="my-accent-font text-center text-muted text-nowrap" style="margin-top: -0.5em;">{{ page.subtitle }}</h4>
-      <hr/>
-    </div>
-    <div class="col-lg-6 col-sm-12 order-lg-1">
-      <p class="text-center"><a href="tel:{{ page.phone }}">{{ page.phone }}</a></p>
-    </div>
-    <div class="col-lg-6 col-sm-12 order-lg-3">
-      <p class="text-center"><a href="mailto:{{ page.email }}" target="_top">{{ page.email }}</a></p>
     </div>
   </div>
   <div class="row">
-    <div class="col-lg-4">
-      <!-- Skills -->
+    <div class="col-6 offset-9 col-sm-4 offset-sm-10">
+      <img src="{{ page.portrait }}" class="rounded img-responsive mx-auto d-block" style="width:100%;"/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <hr/>
+      <h5 class="text-center">{{ page.summary }}</h5>
+      <br/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-24 col-lg-4">
       <div class="card">
         <div class="card-header text-center">
           <h2 class="my-accent-font">Skills</h2>
@@ -34,7 +42,7 @@ source: https://github.com/joematthews/resume
         <div class="card-body">
           <div class="row">
           {% for skill in site.data.skills %}
-            <div class="col-lg-24 col-sm-4 col-6">
+            <div class="col-6 col-sm-4 col-lg-24">
               <p class="text-center">
                 <a href="{{ skill.url }}" target="_blank">
                   <img class="img-fluid rounded" src="{{ skill.image | relative_url }}">
@@ -50,42 +58,40 @@ source: https://github.com/joematthews/resume
       </div>
       <br/>
     </div>
-    <div class="col">
-      <!-- Work History -->
+    <div class="col-24 col-lg">
       <div class="card">
         <div class="card-header text-center">
           <h2 class="my-accent-font">Work History</h2>
         </div>
         <div class="card-body">
-          <!-- Companies -->
           {% for company in site.data.companies %}
           <div class="row align-items-center">
-            <div class="col-md-4 col-sm-6 col-12 order-md-3">
+            <div class="col-6 order-1 col-sm-4 order-md-1">
               <a href="{{ company.url }}" target="_blank">
                 <img class="img-fluid rounded" src="{{ company.image | relative_url }}">
               </a>
             </div>
-            <div class="col-md-4 col-12 order-md-2">
-              <p class="text-muted text-center">{{ company.location }}</p>
+            <div class="col-24 order-3 col-md order-md-2">
+              <h3 class=""><strong>{{ company.name }}</strong></h3>
             </div>
-            <div class="col-md col-sm-24 order-md-1"><h3 class=""><strong>{{ company.name }}</strong></h3></div>
+            <div class="col-18 order-2 col-md-4 order-md-3">
+              <p class="text-muted text-right">{{ company.location }}</p>
+            </div>
           </div>
-          <!-- Positions -->
           {% for position in company.positions %}
           <div class="row align-items-center">
-            <div class="col-md-5">
-              <p class="text-muted text-center"><small>{{ position.dates }}</small></p>
-            </div>
-            <div class="col">
+            <div class="col-24 col-md-20 offset-md-4">
               <h4>{{ position.name }}</h4>
-              <!-- Points -->
+            </div>
+            <div class="col-24 col-md-20 offset-md-4 col-lg-16">
+              <p class="text-muted text-left"><small>{{ position.dates }}</small></p>
+            </div>
+            <div class="col-24 col-md-20 offset-md-4 col-lg-16">
               <ul>
                 {% for point in position.points %}
                 <li class="text-muted">{{ point }}</li>
                 {% endfor %}
               </ul>
-            </div>
-            <div class="col-3">
             </div>
           </div>
           {% endfor %}
@@ -97,28 +103,29 @@ source: https://github.com/joematthews/resume
       </div>
       <br/>
       <div class="card">
-        <!-- Education -->
         <div class="card-header text-center">
           <h2 class="my-accent-font">Education</h2>
         </div>
         <div class="card-body">
-          <!-- Schools -->
           {% for school in site.data.schools %}
           <div class="row align-items-center">
-            <div class="col-md-4 col-sm-8 col-12 order-md-2">
+            <div class="col-6 col-sm-4 order-md-2">
               <a href="{{ school.url }}" target="_blank">
                 <img class="img-fluid rounded" src="{{ school.image | relative_url }}">
               </a>
             </div>
-            <div class="col-md-4 col-sm-8 col-12 order-md-4">
-              <p class="text-center text-muted">{{ school.location }}</p>
+            <div class="col-18 col-md-4 order-md-4">
+              <p class="text-muted text-right">{{ school.location }}</p>
             </div>
-            <div class="col-md-5 col-sm-8 order-md-1">
-              <p class="text-muted text-center"><small>{{ school.dates }}</small></p>
-            </div>
-            <div class="col order-md-3">
+            <div class="col-24 col-md order-md-3">
               <h3 class="text-nowrap">{{ school.name }}</h3>
-              <!-- Points -->
+            </div>
+            <div class="col-24 col-md-5 order-md-1">
+              <p class="text-muted"><small>{{ school.dates }}</small></p>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-24 col-md offset-md-9">
               <ul>
                 {% for point in school.points %}
                 <li>{{ point }}</li>
@@ -132,17 +139,17 @@ source: https://github.com/joematthews/resume
           {% endfor %}
         </div>
       </div>
+      <br/>
+      <p class="text-center" style="font-size: 2em;">
+        {% for network in site.data.networks %}
+        <a href="{{ network.url }}" target="_blank" style="text-decoration: none; color: black;">
+          <i class="{{ network.icon }}"></i>
+        </a>
+        {% endfor %}
+      </p>
+      <p class="text-center">&copy; {{ "now" | date: "%Y" }} {{ page.author }}.</p>
+      <p class="text-center">View page <a href="{{ page.source }}" target="_blank">source</a>.</p>
+      <br/>
     </div>
   </div>
-  <hr/>
-  <p class="text-center" style="font-size: 2em;">
-    {% for network in site.data.networks %}
-    <a href="{{ network.url }}" target="_blank" style="text-decoration: none; color: black;">
-      <i class="{{ network.icon }}"></i>
-    </a>
-    {% endfor %}
-  </p>
-  <p class="text-center">&copy; {{ "now" | date: "%Y" }} {{ page.author }}.</p>
-  <p class="text-center">View page <a href="{{ page.source }}" target="_blank">source</a>.</p>
-  <br/>
 </div><!-- container -->
