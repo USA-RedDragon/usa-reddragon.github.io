@@ -7,3 +7,31 @@ $link-color: #0155af;
 
 // Bootstrap and its default variables
 @import "bootstrap-4.0.0/scss/bootstrap";
+
+.resume-title {
+  font-size: 4.4em;
+}
+
+@include media-breakpoint-up(sm) {
+  .resume-title {
+    font-size: 6em;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .resume-title {
+    font-size: 7em;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .resume-title {
+    font-size: 7em;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .resume-title {
+    font-size: 7em;
+  }
+}
