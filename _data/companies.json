@@ -85,20 +85,4 @@
       }
     ]
   },
-  {
-    "name": "Wal-Mart",
-    "location": "Durant, OK",
-    "image": "/assets/images/companies/walmart.jpg",
-    "url": "https://www.walmartmuseum.com/",
-    "positions": [
-      {
-        "name": "Customer Service Manager",
-        "dates": "Apr 2006 - Jan 2007",
-        "points": [
-          "Provide training, scheduling and mentoring of cashiers",
-          "Act on complaints and suggestions to improve customer satisfaction"
-        ]
-      }
-    ]
-  },
 ]
