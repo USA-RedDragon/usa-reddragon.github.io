@@ -1,161 +1,664 @@
----
-layout: default
-title: Resume
-portrait: assets/images/joe.jpg
-author: Joe Matthews
-subtitle: Father, Friend & Programmer.
-phone: 1-405-274-5060
-email: joe@techwonderful.com
-source: https://github.com/joematthews/resume
-summary: >-
-  Hello, I'm a software engineer with a passion for developing applications and
-  tools that provide an amazing experience for both users and developers.
----
-<div class="container">
-  <!-- Header -->
-  <div class="row align-items-center">
-    <div class="col-24">
-      <h1 class="resume-title my-accent-font display-1 text-center text-nowrap">
-        {{ page.author }}
-      </h1>
-    </div>
-    <div class="col-md-10">
-      <h4 class="my-accent-font text-center text-muted text-nowrap">{{ page.subtitle }}</h4>
-    </div>
-    <div class="col-6 offset-9 col-sm-4 offset-sm-10 offset-md-0">
-      <img src="{{ page.portrait }}" class="rounded img-responsive mx-auto d-block" style="width:100%;"/>
-    </div>
-    <div class="col-md-10">
-      <h3 class="text-center" style="font-size: 2em;">
-        {% for network in site.data.networks %}
-        <a href="{{ network.url }}" target="_blank"
-          style="text-decoration: none; color: #6c757d; padding: .2em;">
-          <i class="{{ network.icon }}"></i>
-        </a>
-        {% endfor %}
-      </h3>
-    </div>
-    <div class="col-md-12 offset-md-6 col-xl-10 offset-xl-7">
-      <hr/>
-      <h5 class="text-center">{{ page.summary }}</h5>
-      <br/>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-24 col-lg-4">
-      <div class="card">
-        <div class="card-header text-center">
-          <h2 class="my-accent-font">Skills</h2>
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="assets/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <title>Resume - Jacob McSwain</title>
+        <meta name="description" content="Work history, education & skills of Jacob McSwain.">
+    </head>
+    <body>
+        <div class="container">
+            <!-- Header -->
+            <div class="row align-items-center">
+                <div class="col-24">
+                    <h1 class="resume-title my-accent-font display-1 text-center text-nowrap">
+                        Jacob McSwain
+                    </h1>
+                </div>
+                <div class="col-md-10">
+                    <h4 class="my-accent-font text-center text-muted text-nowrap">Android Developer</h4>
+                </div>
+                <div class="col-6 offset-9 col-sm-4 offset-sm-10 offset-md-0">
+                    <img src="assets/images/me.jpg" class="rounded img-responsive mx-auto d-block" style="width:100%;"/>
+                </div>
+                <div class="col-md-10">
+                    <h3 class="text-center" style="font-size: 2em;">
+                        <a href="tel:1-405-517-1253" target="_blank" style="text-decoration: none; color: #6c757d; padding: .2em;">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="mailto:jacob.a.mcswain@blissroms.com" target="_blank" style="text-decoration: none; color: #6c757d; padding: .2em;">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/USA-RedDragon" target="_blank" style="text-decoration: none; color: #6c757d; padding: .2em;">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com/jacobmcswain1" target="_blank" style="text-decoration: none; color: #6c757d; padding: .2em;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jacob-mcswain-0b1bb515a/" target="_blank" style="text-decoration: none; color: #6c757d; padding: .2em;">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </h3>
+                </div>
+                <div class="col-md-12 offset-md-6 col-xl-10 offset-xl-7">
+                    <hr/>
+                    <h5 class="text-center">I am an Android ROM and kernel developer and the leader of a group of 19 other developers from all across the world. I enjoy contributing to any open source projects I use and can make better.</h5>
+                    <br/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-24 col-lg-4">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h2 class="my-accent-font">Skills</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6 col-sm-4 col-lg-24">
+                                    <p class="text-center">
+                                        <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank">
+                                            <img class="img-fluid rounded" src="assets/images/skills/c.png">
+                                        </a>
+                                        <small class="text-muted d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                                            C
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-24">
+                                    <p class="text-center">
+                                        <a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank">
+                                            <img class="img-fluid rounded" src="assets/images/skills/cpp.png">
+                                        </a>
+                                        <small class="text-muted d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                                            C++
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-24">
+                                    <p class="text-center">
+                                        <a href="https://www.oracle.com/java/index.html" target="_blank">
+                                            <img class="img-fluid rounded" src="assets/images/skills/java.png">
+                                        </a>
+                                        <small class="text-muted d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                                            Java
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-24">
+                                    <p class="text-center">
+                                        <a href="https://git-scm.com/" target="_blank">
+                                            <img class="img-fluid rounded" src="assets/images/skills/git.png">
+                                        </a>
+                                        <small class="text-muted d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                                            Git
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-24">
+                                    <p class="text-center">
+                                        <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank">
+                                            <img class="img-fluid rounded" src="assets/images/skills/html5.png">
+                                        </a>
+                                        <small class="text-muted d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                                            HTML5
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-24">
+                                    <p class="text-center">
+                                        <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">
+                                            <img class="img-fluid rounded" src="assets/images/skills/css3.png">
+                                        </a>
+                                        <small class="text-muted d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                                            CSS3
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-24">
+                                    <p class="text-center">
+                                        <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">
+                                            <img class="img-fluid rounded" src="assets/images/skills/js.png">
+                                        </a>
+                                        <small class="text-muted d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                                            JavaScript
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-24">
+                                    <p class="text-center">
+                                        <a href="https://nodejs.org/en/" target="_blank">
+                                            <img class="img-fluid rounded" src="assets/images/skills/node.png">
+                                        </a>
+                                        <small class="text-muted d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                                            Node.JS
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-24">
+                                    <p class="text-center">
+                                        <a href="https://www.perl.org/" target="_blank">
+                                            <img class="img-fluid rounded" src="assets/images/skills/perl.png">
+                                        </a>
+                                        <small class="text-muted d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                                            Perl
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-24">
+                                    <p class="text-center">
+                                        <a href="https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29" target="_blank">
+                                            <img class="img-fluid rounded" src="assets/images/skills/bash.png">
+                                        </a>
+                                        <small class="text-muted d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                                            Bash
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-24">
+                                    <p class="text-center">
+                                        <a href="https://en.wikipedia.org/wiki/Linux" target="_blank">
+                                            <img class="img-fluid rounded" src="assets/images/skills/sysadmin.png">
+                                        </a>
+                                        <small class="text-muted d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                                            Linux Admin
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-24">
+                                    <p class="text-center">
+                                        <a href="http://www.php.net/" target="_blank">
+                                            <img class="img-fluid rounded" src="assets/images/skills/php.png">
+                                        </a>
+                                        <small class="text-muted d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                                            PHP
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-24">
+                                    <p class="text-center">
+                                        <a href="http://www.mysql.com/" target="_blank">
+                                            <img class="img-fluid rounded" src="assets/images/skills/mysql.png">
+                                        </a>
+                                        <small class="text-muted d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                                            MySQL
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-24">
+                                    <p class="text-center">
+                                        <a href="http://www.android.com/" target="_blank">
+                                            <img class="img-fluid rounded" src="assets/images/skills/android.png">
+                                        </a>
+                                        <small class="text-muted d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                                            Android
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-24">
+                                    <p class="text-center">
+                                        <a href="https://kotlinlang.org/" target="_blank">
+                                            <img class="img-fluid rounded" src="assets/images/skills/kotlin.png">
+                                        </a>
+                                        <small class="text-muted d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                                            Kotlin
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-24">
+                                    <p class="text-center">
+                                        <a href="https://kernel.org/" target="_blank">
+                                            <img class="img-fluid rounded" src="assets/images/skills/kernel.png">
+                                        </a>
+                                        <small class="text-muted d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                                            Linux Kernel Development
+                                        </small>
+                                    </p>
+                                </div>
+                                <div class="col-6 col-sm-4 col-lg-24">
+                                    <p class="text-center">
+                                        <a href="https://en.wikipedia.org/wiki/Assembly_language" target="_blank">
+                                            <img class="img-fluid rounded" src="assets/images/skills/assembly.png">
+                                        </a>
+                                        <small class="text-muted d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                                            ARM and x86 Assembly
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br/>
+                </div>
+                <div class="col-24 col-lg">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h2 class="my-accent-font">Project History</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-6 order-1 col-sm-4 order-md-1">
+                                    <a href="http://www.invictrixrom.com/" target="_blank">
+                                        <img class="img-fluid rounded" src="assets/images/projects/invictrix.png">
+                                    </a>
+                                </div>
+                                <div class="col-24 order-3 col-md order-md-2">
+                                    <h3 class=""><strong>Invictrix</strong></h3>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-24 col-md-20 offset-md-4 col-lg-20">
+                                    <h4>Project Lead</h4>
+                                </div>
+                                <div class="col-24 col-md-5 col-lg-5">
+                                    <p class="text-muted text-left"><small>October 2017 - Present&nbsp;</small></p>
+                                </div>
+                                <div class="col-24 col-md-19 col-lg-15 offset-lg-0">
+                                    <ul>
+                                        <li class="text-muted">International development team</li>
+                                        <li class="text-muted">Running on thousands of devices</li>
+                                        <li class="text-muted">Maintains a Security Patch level even with Google's release cycle</li>
+                                        <li class="text-muted">Delta Upgrades and OTA Update Server</li>
+                                        <li class="text-muted"><a href="https://review.invictrixrom.com">Gerrit Code Review Server</a></li>
+                                        <li class="text-muted">Jenkins build server for automatic updates</li>
+                                        <li class="text-muted">Use Java, Python, C, C++, Makefiles, and PHP to build, serve, and update builds</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row align-items-center">
+                                <div class="col-6 order-1 col-sm-4 order-md-1">
+                                    <a href="https://www.github.com/DesolationROM" target="_blank">
+                                        <img class="img-fluid rounded" src="assets/images/projects/desolation.png">
+                                    </a>
+                                </div>
+                                <div class="col-24 order-3 col-md order-md-2">
+                                    <h3 class=""><strong>Desolation</strong></h3>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-24 col-md-20 offset-md-4 col-lg-20">
+                                    <h4>Lead Programmer</h4>
+                                </div>
+                                <div class="col-24 col-md-5 col-lg-5">
+                                    <p class="text-muted text-left"><small>December 2014 - October 2017</small></p>
+                                </div>
+                                <div class="col-24 col-md-19 col-lg-15 offset-lg-0">
+                                    <ul>
+                                        <li class="text-muted">International development team</li>
+                                        <li class="text-muted">Running on thousands of devices</li>
+                                        <li class="text-muted">Maintains a Security Patch level even with Google's release cycle</li>
+                                        <li class="text-muted">Delta Upgrades and OTA Update Server</li>
+                                        <li class="text-muted">Use Java, Python, C, C++, and Makefiles to build, serve, and update builds</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row align-items-center">
+                                <div class="col-6 order-1 col-sm-4 order-md-1">
+                                    <a href="https://blissroms.com/" target="_blank">
+                                        <img class="img-fluid rounded" src="assets/images/projects/bliss.png">
+                                    </a>
+                                </div>
+                                <div class="col-24 order-3 col-md order-md-2">
+                                    <h3 class=""><strong>Bliss ROMs</strong></h3>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-24 col-md-20 offset-md-4 col-lg-20">
+                                    <h4>Developer</h4>
+                                </div>
+                                <div class="col-24 col-md-5 col-lg-5">
+                                    <p class="text-muted text-left"><small>January 2018 - Present</small></p>
+                                </div>
+                                <div class="col-24 col-md-19 col-lg-15 offset-lg-0">
+                                    <ul>
+                                        <li class="text-muted">International development team</li>
+                                        <li class="text-muted">Running on thousands of devices</li>
+                                        <li class="text-muted">Maintains a Security Patch level even with Google's release cycle</li>
+                                        <li class="text-muted">Delta Upgrades and OTA Update Server</li>
+                                        <li class="text-muted">Use Java, Python, C, C++, and Makefiles to build, serve, and update builds</li>
+                                        <li class="text-muted">Contract Development</li>
+                                        <li class="text-muted">Nonprofit organization (Bliss Studios)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row align-items-center">
+                                <div class="col-6 order-1 col-sm-4 order-md-1">
+                                    <a href="https://github.com/USA-RedDragon/RESTful-Library" target="_blank">
+                                        <img class="img-fluid rounded" src="assets/images/projects/rest.png">
+                                    </a>
+                                </div>
+                                <div class="col-24 order-3 col-md order-md-2">
+                                    <h3 class=""><strong>RESTful Library</strong></h3>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-24 col-md-20 offset-md-4 col-lg-20">
+                                    <h4>Developer</h4>
+                                </div>
+                                <div class="col-24 col-md-5 col-lg-5">
+                                    <p class="text-muted text-left"><small>June 2016</small></p>
+                                </div>
+                                <div class="col-24 col-md-19 col-lg-15 offset-lg-0">
+                                    <ul>
+                                        <li class="text-muted">Java library for simplifying REST requests in various formats to any server</li>
+                                        <li class="text-muted">Supports http authentication, POST and GET operations, custom http headers, and JSON, XML, and plain text responses.</li>
+                                        <li class="text-muted">Minimalized boilerplate code</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row align-items-center">
+                                <div class="col-6 order-1 col-sm-4 order-md-1">
+                                    <a href="https://github.com/USA-RedDragon/sprd-mkbootimg-tools" target="_blank">
+                                        <img class="img-fluid rounded" src="assets/images/projects/spreadtrum.jpg">
+                                    </a>
+                                </div>
+                                <div class="col-24 order-3 col-md order-md-2">
+                                    <h3 class=""><strong>Spreadtrum Bootimage Tools</strong></h3>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-24 col-md-20 offset-md-4 col-lg-20">
+                                    <h4>Developer</h4>
+                                </div>
+                                <div class="col-24 col-md-5 col-lg-5">
+                                    <p class="text-muted text-left"><small>June 2017</small></p>
+                                </div>
+                                <div class="col-24 col-md-19 col-lg-15 offset-lg-0">
+                                    <ul>
+                                        <li class="text-muted">A fork of mkbootimg tools used for specialized boot images that Samsung used on some of their tablets with Spreadtrum chips inside.</li>
+                                        <li class="text-muted">Reverse enginered a proprietary boot image format and written in C</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row align-items-center">
+                                <div class="col-6 order-1 col-sm-4 order-md-1">
+                                    <a href="https://github.com/FusionSP" target="_blank">
+                                        <img class="img-fluid rounded" src="assets/images/projects/fusion.png">
+                                    </a>
+                                </div>
+                                <div class="col-24 order-3 col-md order-md-2">
+                                    <h3 class=""><strong>Fusion ROM</strong></h3>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-24 col-md-20 offset-md-4 col-lg-20">
+                                    <h4>Developer</h4>
+                                </div>
+                                <div class="col-24 col-md-5 col-lg-5">
+                                    <p class="text-muted text-left"><small>July 2015 - December 2015</small></p>
+                                </div>
+                                <div class="col-24 col-md-19 col-lg-15 offset-lg-0">
+                                    <ul>
+                                        <li class="text-muted">International development team</li>
+                                        <li class="text-muted">Running on thousands of devices</li>
+                                        <li class="text-muted">Maintains a Security Patch level even with Google's release cycle</li>
+                                        <li class="text-muted">Delta Upgrades and OTA Update Server</li>
+                                        <li class="text-muted">Use Java, Python, C, C++, and Makefiles to build, serve, and update builds</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row align-items-center">
+                                <div class="col-6 order-1 col-sm-4 order-md-1">
+                                    <a href="https://github.com/USA-RedDragon/Invictrix_chatbot" target="_blank">
+                                        <img class="img-fluid rounded" src="assets/images/projects/invictrix.png">
+                                    </a>
+                                </div>
+                                <div class="col-24 order-3 col-md order-md-2">
+                                    <h3 class=""><strong>Invictrix Moderator Bot</strong></h3>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-24 col-md-20 offset-md-4 col-lg-20">
+                                    <h4>Developer</h4>
+                                </div>
+                                <div class="col-24 col-md-5 col-lg-5">
+                                    <p class="text-muted text-left"><small>January 2018</small></p>
+                                </div>
+                                <div class="col-24 col-md-19 col-lg-15 offset-lg-0">
+                                    <ul>
+                                        <li class="text-muted">A Node.JS bot written for Telegram to moderate our public chat</li>
+                                        <li class="text-muted">Helps combat spammers and misconduct</li>
+                                        <li class="text-muted">Automatically bans based on certain criteria, supports command for admins, and has a ban list for repeat offenders</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row align-items-center">
+                                <div class="col-6 order-1 col-sm-4 order-md-1">
+                                    <a href="https://github.com/USA-RedDragon/CardsAgainstAndroid_chatbot" target="_blank">
+                                        <img class="img-fluid rounded" src="assets/images/projects/cards.png">
+                                    </a>
+                                </div>
+                                <div class="col-24 order-3 col-md order-md-2">
+                                    <h3 class=""><strong>Cards Against Android Game</strong></h3>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-24 col-md-20 offset-md-4 col-lg-20">
+                                    <h4>Developer</h4>
+                                </div>
+                                <div class="col-24 col-md-5 col-lg-5">
+                                    <p class="text-muted text-left"><small>January 2018</small></p>
+                                </div>
+                                <div class="col-24 col-md-19 col-lg-15 offset-lg-0">
+                                    <ul>
+                                        <li class="text-muted">A Node.JS bot written for Telegram to play an Android themed Cards Against Humanity game.</li>
+                                        <li class="text-muted">Large set of Android and DevOps specific cards.</li>
+                                        <li class="text-muted">Uses workarounds to accomplish its goals where the Telegram API doesn't support it</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row align-items-center">
+                                <div class="col-6 order-1 col-sm-4 order-md-1">
+                                    <a href="https://github.com/USA-RedDragon/cluster" target="_blank">
+                                        <img class="img-fluid rounded" src="assets/images/projects/cluster.png">
+                                    </a>
+                                </div>
+                                <div class="col-24 order-3 col-md order-md-2">
+                                    <h3 class=""><strong>Custom Instrument Cluster</strong></h3>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-24 col-md-20 offset-md-4 col-lg-20">
+                                    <h4>Developer</h4>
+                                </div>
+                                <div class="col-24 col-md-5 col-lg-5">
+                                    <p class="text-muted text-left"><small>October 2017</small></p>
+                                </div>
+                                <div class="col-24 col-md-19 col-lg-15 offset-lg-0">
+                                    <ul>
+                                        <li class="text-muted"><a href="https://imgur.com/a/VYZ21">Album of Pictures</a></li>
+                                        <li class="text-muted">A serial driver and a Raspberry PI connected to a Chevrolet ALDL port(pre-ODB2, before 1995) to provide a GUI based instrument cluster</li>
+                                        <li class="text-muted">Provided a more accurate experience with MPG calculator and other added features to modernize the driving experience</li>
+                                        <li class="text-muted">Written in C with some hardware soldering required</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row align-items-center">
+                                <div class="col-6 order-1 col-sm-4 order-md-1">
+                                    <a href="https://github.com/USA-RedDragon?tab=repositories&q=Werewolf+OR+kernel_+NOT+kernel_adiutor" target="_blank">
+                                        <img class="img-fluid rounded" src="assets/images/projects/werewolf.jpg">
+                                    </a>
+                                </div>
+                                <div class="col-24 order-3 col-md order-md-2">
+                                    <h3 class=""><strong>Werewolf Kernel</strong></h3>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-24 col-md-20 offset-md-4 col-lg-20">
+                                    <h4>Developer</h4>
+                                </div>
+                                <div class="col-24 col-md-5 col-lg-5">
+                                    <p class="text-muted text-left"><small>June 2016 - Present</small></p>
+                                </div>
+                                <div class="col-24 col-md-19 col-lg-15 offset-lg-0">
+                                    <ul>
+                                        <li class="text-muted">A set of Android kernel forks I maintain to fix OEM bugs and provide a better User Experience</li>
+                                        <li class="text-muted">Collectively ran on 5k+ devices</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h2 class="my-accent-font">Contributions</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-24 col-md-20 offset-md-4 col-lg-20">
+                                    <a href="https://www.xda-developers.com/lg-v20-second-screen-custom-widgets/" target="_blank">
+                                        <h4>FOSS LG V20 Second Screen API</h4>
+                                    </a>
+                                </div>
+                                <div class="col-24 col-md-5 col-lg-5">
+                                    <p class="text-muted text-left"><small>August 2017</small></p>
+                                </div>
+                                <div class="col-24 col-md-19 col-lg-15 offset-lg-0">
+                                    <ul>
+                                        <li class="text-muted"><a href="https://www.youtube.com/watch?v=wr7vn0pXV1U">Proof Of Concept</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row align-items-center">
+                                <div class="col-24 col-md-20 offset-md-4 col-lg-20">
+                                    <a href="https://www.xda-developers.com/xda-external-link/t-mobile-samsung-galaxy-note-4-gets-unofficial-nougat/" target="_blank">
+                                        <h4>First Developer to get Android 7.0 Nougat Running on the Samsung Galaxy Note 4</h4>
+                                    </a>
+                                </div>
+                                <div class="col-24 col-md-5 col-lg-5">
+                                    <p class="text-muted text-left"><small>October 2016</small></p>
+                                </div>
+                                <div class="col-24 col-md-19 col-lg-15 offset-lg-0">
+                                    <ul>
+                                        <li class="text-muted"><a href="https://forum.xda-developers.com/note-4-tmobile/development/wip-aosp-ish-nougat-trltetmo-t3458030">XDA Thread</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row align-items-center">
+                                <div class="col-24 col-md-20 offset-md-4 col-lg-20">
+                                    <a href="https://github.com/InvictrixRom/frameworks_base/commit/29b2606eef40bbc5741d10577737899e8d4e1c8b" target="_blank">
+                                        <h4>Pixel Navbar</h4>
+                                    </a>
+                                </div>
+                                <div class="col-24 col-md-5 col-lg-5">
+                                    <p class="text-muted text-left"><small>November 2016</small></p>
+                                </div>
+                                <div class="col-24 col-md-19 col-lg-15 offset-lg-0">
+                                    <ul>
+                                        <li class="text-muted"><a href="https://github.com/search?utf8=%E2%9C%93&q=Pixel+Navbar&type=Commits">Spawned over 4k Commits</a></li>
+                                        <li class="text-muted"><a href="https://github.com/DirtyUnicorns/android_packages_apps_DUI/commit/5df39f33ddc94db5ab26808a5264227703e5db38">Brought into a larger project</a></li>
+                                        <li class="text-muted"><a href="https://github.com/search?q=Bring+in+initial+Pixel+Navbar+animation+resources&type=Commits">Larger project spawned over 60 Commits</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row align-items-center">
+                                <div class="col-24 col-md-20 offset-md-4 col-lg-20">
+                                    <a href="https://www.github.com/Substratum/" target="_blank">
+                                        <h4>Substratum</h4>
+                                    </a>
+                                </div>
+                                <div class="col-24 col-md-5 col-lg-5">
+                                    <p class="text-muted text-left"><small>June 2016</small></p>
+                                </div>
+                                <div class="col-24 col-md-19 col-lg-15 offset-lg-0">
+                                    <ul>
+                                        <li class="text-muted"><a href="https://github.com/SubstratumResources/platform_frameworks_base/commit/5555a17641c7ccbb5ceb5462317ca4f9046b1ff3">Multi target OMS enable and disable</a></li>
+                                        <li class="text-muted"><a href="https://github.com/substratum/substratum/commit/086ff1b3f51a3896112e3a14a54140737829f24a">App bugfixes</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row align-items-center">
+                                <div class="col-24 col-md-20 offset-md-4 col-lg-20">
+                                    <a href="https://review.invictrixrom.com/#/q/status:merged+topic:font_engine" target="_blank">
+                                        <h4>Android Custom Font Support</h4>
+                                    </a>
+                                </div>
+                                <div class="col-24 col-md-5 col-lg-5">
+                                    <p class="text-muted text-left"><small>March 2018</small></p>
+                                </div>
+                                <div class="col-24 col-md-19 col-lg-15 offset-lg-0">
+                                    <ul>
+                                        <li class="text-muted"><a href="https://github.com/DirtyUnicorns/android_vendor_du/commit/c5b22c8ffecb8497cc096c135a863b4c8324853f">Fonts.xml Entries for Custom Fonts</a></li>
+                                        <li class="text-muted"><a href="https://github.com/search?q=Add+DU+font+package&type=Commits">Spawned 75 Commits</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row align-items-center">
+                                <div class="col-24 col-md-20 offset-md-4 col-lg-20">
+                                    <a href="https://www.github.com/jereksel/Bucket" target="_blank">
+                                        <h4>Bucket</h4>
+                                    </a>
+                                </div>
+                                <div class="col-24 col-md-5 col-lg-5">
+                                    <p class="text-muted text-left"><small>December 2017</small></p>
+                                </div>
+                                <div class="col-24 col-md-19 col-lg-15 offset-lg-0">
+                                    <ul>
+                                        <li class="text-muted"><a href="https://github.com/USA-RedDragon/Bucket/commit/37f2ab501e19819ee6a982b7fd60729769ddeadd">WIP Samsung Theme Engine Support</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="row align-items-center">
+                                <div class="col-24 col-md-20 offset-md-4 col-lg-20">
+                                    <h4>And Various Others</h4>
+                                </div>
+                                <div class="col-24 col-md-5 col-lg-5">
+                                    <p class="text-muted text-left"><small>Ongoing</small></p>
+                                </div>
+                                <div class="col-24 col-md-19 col-lg-15 offset-lg-0">
+                                    <ul>
+                                        <li class="text-muted"><a href="https://github.com/Grarak/KernelAdiutor/pull/182">Kernel Adiutor</a></li>
+                                        <li class="text-muted"><a href="https://github.com/TeamBliss-Devices/android_device_asus_flo/pull/1">Bliss ROMs Nexus 2013</a></li>
+                                        <li class="text-muted"><a href="https://github.com/C-Aniruddh/ace-kernel_lettuce/pull/1">Android Marshmallow Kernel Bringup</a></li>
+                                        <li class="text-muted"><a href="https://github.com/sultanqasim/android_kernel_motorola_msm8916/pull/6">Moto E Kernel Fixes</a></li>
+                                        <li class="text-muted"><a href="https://github.com/ccrama/Slide/pull/2691">Slide For Android</a></li>
+                                        <li class="text-muted"><a href="https://github.com/ClockSelect/myevic/commit/6c745cb40c8b053dbfacbace7693a6c96e3e5d3d">myevic Vape Firmware</a></li>
+                                        <li class="text-muted"><a href="https://github.com/chevycam94/platform_build/pull/3">Android Build Repos</a></li>
+                                        <li class="text-muted"><a href="https://github.com/zaclimon/Quanta-Flo/pull/1">Kernel Header Fixes</a></li>
+                                        <li class="text-muted"><a href="https://github.com/jollaman999/jolla-kernel_bullhead/pull/3">Fingerprint Boost Driver Port</a></li>
+                                        <li class="text-muted"><a href="https://github.com/search?q=USA-RedDragon&type=Commits">And many many more</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-7">
+                    <br/>
+                    <p class="text-center">View page <a href="https://github.com/USA-RedDragon/usa-reddragon.github.io/" target="_blank">source</a>.</p>
+                    <hr/>
+                    <p class="text-center">&copy; 2018 Joe Matthews.</p>
+                    <p class="text-center">&copy; 2018 Jacob McSwain.</p>
+                    <br/>
+                </div>
+            </div>
         </div>
-        <div class="card-body">
-          <div class="row">
-          {% for skill in site.data.skills %}
-            <div class="col-6 col-sm-4 col-lg-24">
-              <p class="text-center">
-                <a href="{{ skill.url }}" target="_blank">
-                  <img class="img-fluid rounded" src="{{ skill.image | relative_url }}">
-                </a>
-                <small class="text-muted d-none d-sm-none d-md-block d-lg-block d-xl-block">
-                  {{ skill.name }}
-                </small>
-              </p>
-            </div>
-          {% endfor %}
-          </div>
-        </div>
-      </div>
-      <br/>
-    </div>
-    <div class="col-24 col-lg">
-      <div class="card">
-        <div class="card-header text-center">
-          <h2 class="my-accent-font">Work History</h2>
-        </div>
-        <div class="card-body">
-          {% for company in site.data.companies %}
-          <div class="row align-items-center">
-            <div class="col-6 order-1 col-sm-4 order-md-1">
-              <a href="{{ company.url }}" target="_blank">
-                <img class="img-fluid rounded" src="{{ company.image | relative_url }}">
-              </a>
-            </div>
-            <div class="col-24 order-3 col-md order-md-2">
-              <h3 class=""><strong>{{ company.name }}</strong></h3>
-            </div>
-            <div class="col-18 order-2 col-md-4 order-md-3">
-              <p class="text-muted text-right">{{ company.location }}</p>
-            </div>
-          </div>
-          {% for position in company.positions %}
-          <div class="row align-items-center">
-            <div class="col-24 col-md-20 offset-md-4 col-lg-20">
-              <h4>{{ position.name }}</h4>
-            </div>
-            <div class="col-24 col-md-5 col-lg-5">
-              <p class="text-muted text-left"><small>{{ position.dates }}</small></p>
-            </div>
-            <div class="col-24 col-md-19 col-lg-15 offset-lg-0">
-              <ul>
-                {% for point in position.points %}
-                <li class="text-muted">{{ point }}</li>
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-          {% endfor %}
-          {% if company != site.data.companies.last %}
-            <hr/>
-          {% endif %}
-          {% endfor %}
-        </div>
-      </div>
-      <br/>
-      <div class="card">
-        <div class="card-header text-center">
-          <h2 class="my-accent-font">Education</h2>
-        </div>
-        <div class="card-body">
-          {% for school in site.data.schools %}
-          <div class="row align-items-center">
-            <div class="col-6 col-sm-4 order-md-2">
-              <a href="{{ school.url }}" target="_blank">
-                <img class="img-fluid rounded" src="{{ school.image | relative_url }}">
-              </a>
-            </div>
-            <div class="col-18 col-md-4 order-md-4">
-              <p class="text-muted text-right">{{ school.location }}</p>
-            </div>
-            <div class="col-24 col-md order-md-3">
-              <h3 class="text-nowrap">{{ school.name }}</h3>
-            </div>
-            <div class="col-24 col-md-5 order-md-1">
-              <p class="text-muted"><small>{{ school.dates }}</small></p>
-            </div>
-          </div>
-          <div class="row align-items-center">
-            <div class="col-24 col-md offset-md-9">
-              <ul>
-                {% for point in school.points %}
-                <li>{{ point }}</li>
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-          {% if school != site.data.schools.last %}
-          <hr/>
-          {% endif %}
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-10 offset-lg-7">
-      <br/>
-      <p class="text-center">View page <a href="{{ page.source }}" target="_blank">source</a>.</p>
-      <hr/>
-      <p class="text-center">&copy; {{ "now" | date: "%Y" }} {{ page.author }}.</p>
-      <br/>
-    </div>
-  </div>
-</div><!-- container -->
+
+        <!-- Bootstrap Javascript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
+
