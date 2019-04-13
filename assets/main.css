@@ -6606,27 +6606,27 @@ button.bg-dark:focus {
 }
 
 .rounded {
-    border-radius: .25rem !important
+    border-radius: .50rem !important
 }
 
 .rounded-top {
-    border-top-left-radius: .25rem !important;
-    border-top-right-radius: .25rem !important
+    border-top-left-radius: .50rem !important;
+    border-top-right-radius: .50rem !important
 }
 
 .rounded-right {
-    border-top-right-radius: .25rem !important;
-    border-bottom-right-radius: .25rem !important
+    border-top-right-radius: .50rem !important;
+    border-bottom-right-radius: .50rem !important
 }
 
 .rounded-bottom {
-    border-bottom-right-radius: .25rem !important;
-    border-bottom-left-radius: .25rem !important
+    border-bottom-right-radius: .50rem !important;
+    border-bottom-left-radius: .50rem !important
 }
 
 .rounded-left {
-    border-top-left-radius: .25rem !important;
-    border-bottom-left-radius: .25rem !important
+    border-top-left-radius: .50rem !important;
+    border-bottom-left-radius: .50rem !important
 }
 
 .rounded-circle {
