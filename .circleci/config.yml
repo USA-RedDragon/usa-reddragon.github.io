@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: jamcswain/circleci-aws-cli
+
+    steps:
+      - checkout
+
+      - run:
+          name: Push to S3
+          command: aws s3 sync . s3://mcswainsoftware
+
+      - run:
+          name: Clear Cloudfront Cache
+          command: aws cloudfront create-invalidation --distribution-id EZTDYA9R5I0FY --paths "/*"
