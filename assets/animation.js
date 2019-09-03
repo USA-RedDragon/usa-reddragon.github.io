@@ -35,12 +35,16 @@ window.onload = function() {
         window.requestAnimationFrame(animate);
     }
 
+    var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
     var canvas = document.getElementById('constellationCanvas');
     var context = canvas.getContext('2d');
     var particles = [];
     var particleSize = 4;
     var maxParticles = 40;
     var threshold = 100;
+    if (isMobile) {
+        maxParticles = maxParticles / 2;
+    }
     canvas.height = canvas.parentNode.clientHeight;
     canvas.width = canvas.parentNode.clientWidth;
     for (var i = 0; i < maxParticles; i++) {
