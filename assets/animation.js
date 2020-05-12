@@ -51,8 +51,8 @@ window.onload = function() {
         var particle = {
             x: Math.random() * canvas.width,
             y: Math.random() * canvas.height,
-            vx: Math.random() * (Math.random() > 0.5 ? 1:-1),
-            vy: Math.random() * (Math.random() > 0.5 ? 1:-1),
+            vx: (Math.random() * 1.15) * (Math.random() > 0.5 ? 1:-1),
+            vy: (Math.random() * 1.15) * (Math.random() > 0.5 ? 1:-1),
         }
         particles.push(particle);
     }
