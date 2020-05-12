@@ -9130,3 +9130,8 @@ a.text-dark:focus {
 .constellationWrapper {
     position:relative
 }
+
+.black-background {
+    background-color: black;
+    background: black;
+}
