@@ -43,7 +43,7 @@ window.onload = function() {
     var maxParticles = 40;
     var threshold = 100;
     if (isMobile) {
-        maxParticles = maxParticles / 2;
+        threshold = threshold * 0.65;
     }
     canvas.height = canvas.parentNode.clientHeight;
     canvas.width = canvas.parentNode.clientWidth;
