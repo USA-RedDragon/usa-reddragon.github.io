@@ -40,7 +40,7 @@ window.onload = function() {
     var context = canvas.getContext('2d');
     var particles = [];
     var particleSize = 4;
-    var maxParticles = 40;
+    var maxParticles = 60;
     var threshold = 100;
     if (isMobile) {
         threshold = threshold * 0.65;
