@@ -1,5 +1,20 @@
 
 window.onload = function() {
+    var lastPos = [];
+    var curPos = [];
+
+    function updateMousePos(evt) {
+        var canvas = evt.target;
+        var rect = canvas.getBoundingClientRect();
+        lastPos = curPos;
+        curPos = {
+            x: (evt.clientX - rect.left) / (rect.right - rect.left) * canvas.width,
+            y: (evt.clientY - rect.top) / (rect.bottom - rect.top) * canvas.height,
+            vx: 0,
+            vy: 0
+        };
+    }
+
     function line(particle, particle2) {
         context.beginPath();
         context.moveTo(particle.x, particle.y);
@@ -9,10 +24,10 @@ window.onload = function() {
 
     function animate() {
         context.clearRect(0, 0, canvas.width, canvas.height);
-        for (var i = 0; i < maxParticles; i++) {
+        for (var i = 0; i < particles.length; i++) {
             var particle = particles[i];
             context.fillRect(particle.x - particleSize / 2, particle.y - particleSize / 2, particleSize, particleSize);
-            for (var j = 0; j < maxParticles; j++) {
+            for (var j = 0; j < particles.length; j++) {
                 if (i != j) {
                     var particle2 = particles[j];
                     var distanceX = Math.abs(particle.x - particle2.x);
@@ -32,6 +47,10 @@ window.onload = function() {
             if (particle.y > canvas.height - particleSize || particle.y < particleSize)
                 particle.vy = -particle.vy;
         }
+        if (!isMobile && curPos != lastPos) {
+            var start = particles.indexOf(lastPos)
+            particles.splice(start, 1, curPos)
+        }
         window.requestAnimationFrame(animate);
     }
 
@@ -44,6 +63,8 @@ window.onload = function() {
     var threshold = 100;
     if (isMobile) {
         threshold = threshold * 0.65;
+    } else {
+        canvas.addEventListener("mousemove", updateMousePos)
     }
     canvas.height = canvas.parentNode.clientHeight;
     canvas.width = canvas.parentNode.clientWidth;
