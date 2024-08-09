@@ -3,7 +3,18 @@
   "links": [
     {
       "rel": "http://openid.net/specs/connect/1.0/issuer",
-      "href": "https://authentik.mcswain.dev"
+      "href": "https://authentik.mcswain.dev/application/o/tailscale/"
+    },
+    {
+      "rel": "http://webfinger.net/rel/avatar",
+      "href": "https://avatars.githubusercontent.com/u/13051767?v=4"
+    },
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "href": "https://jacob.mcswain.dev"
     }
-  ]
+  ],
+  "properties": {
+    "http://schema.org/name":"Jacob McSwain"
+  }
 }
